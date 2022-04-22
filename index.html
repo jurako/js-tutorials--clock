@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Test</h1>
+    <div class="l-main-container">
+
+        <div class="l-clock-container">
+            <div class="l-horizontal-center">
+                <div class="clock" data-tz="EET">09:00:00 AM</div>
+            </div>
+            <div class="l-horizontal-center l-secondary-clocks-container">
+                <div class="clock-card">
+                    <div class="clock clock-card__clock" data-tz="EST">09:00:00 AM</div>
+                    <h4 class="clock-card__title">New York</h4>
+                </div>
+                <div class="clock-card">
+                    <div class="clock clock-card__clock" data-tz="UTC">09:00:00 AM</div>
+                    <h4 class="clock-card__title">London</h4>
+                </div>
+                <div class="clock-card">
+                    <div class="clock clock-card__clock" data-tz="JST">09:00:00 AM</div>
+                    <h4 class="clock-card__title">Tokyo</h4>
+                </div>
+            </div>
+            <div class="l-horizontal-center">
+                <select class="time-format">
+                    <option value="24" class="time-format__24-hour">24 hour</option>
+                    <option value="12" class="time-format__12-hour">12 hour</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <script src="clock.js"></script>
+</body>
+</html>

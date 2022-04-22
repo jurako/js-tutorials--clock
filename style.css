@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: monospace;
+    color: #fff;
+    overflow-y: hidden;
+}
+
+/*Layout modules*/
+.l-main-container {
+    height: 100vh;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.l-clock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+}
+
+.l-horizontal-center {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.l-secondary-clocks-container {
+    justify-content: space-between;
+}
+
+
+/*Component modules*/
+.clock {
+    color: #17D4FE;
+    font-size: 2em;
+}
+
+.clock-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7em;
+}
+
+.clock-card__clock {
+    font-size: inherit;
+}
+
+.time-format {
+    font-size: 0.2em;
+}
